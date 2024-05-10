@@ -1,0 +1,256 @@
+  
+  
+   /* * {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 101, 101);
+    color: white;
+}
+
+header nav {
+    height: 50px;
+    background-color: rgb(113, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+h1 {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color:rgb(247, 186, 186);
+}
+
+.Search {
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-items: center;
+    height: 30px;
+    background-color: rgb(250, 177, 177);
+    border-radius:5px;
+}
+.button{
+    height: 30px;
+    margin-right: 10px;
+    border-radius:5px;
+    background-color: rgb(250, 177, 177);
+    border-color: 5px rgb(190, 108, 108) ;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+    
+    .recipe-section {
+        padding: 50px 0; 
+    }
+}
+@media screen and (max-width: 480px) {
+    .container {
+        width: 95%; 
+    }
+    
+    .recipe-section {
+        padding: 30px 0;
+}
+}
+
+
+.photo{
+    margin-top: 20%;
+    justify-content: center;
+    margin:  20px 20px 20px 20px;
+    display: flex;
+    height: 400px;
+    width: 400px;
+
+    
+}
+.S{
+   font-size: 100px;
+   color: black;
+}
+.container{
+    font-size: large;
+text-align: center;
+
+display: grid;
+grid-gap: 40px;
+height: 200px;
+ grid-template-columns: repeat(auto-fit ,minmax(300px ,1fr));
+width: 80%;
+margin: 10px auto;
+padding: 20px;
+place-items: center; 
+
+
+
+ } 
+ .recipe{
+    background-color: white;
+    display:flex;
+    flex-direction:column;
+    color: black;
+    cursor: pointer;
+    max-width: 350px;
+    }
+
+    .recipe img{
+        height: 300px;
+    }
+    .recipe h3{
+        font-size: 24 px;
+
+    }
+    .recipe p{
+        font-size: 20 px;
+    }
+     .recipe button{
+        font-size: 20px;
+        font-weight: 600px;
+        padding:10px;
+        border-radius: 2px;
+        border:none;
+        cursor: pointer;
+        background-color: rgb(181, 133, 133);
+         margin: 10px auto; 
+    
+    }
+    .recipe button:hover{
+        background-color: red;
+    }   
+
+  */
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(244, 101, 101);
+    color: white;
+}
+
+header nav {
+    height: 100px;
+    background-color: rgb(113, 52, 52);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgb(247, 186, 186);
+}
+
+.Search {
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-right: 10px;
+    justify-items: center;
+    height: 30px;
+    background-color: rgb(250, 177, 177);
+    border-radius: 5px;
+}
+
+.button {
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: rgb(250, 177, 177);
+    border-color: 5px rgb(190, 108, 108);
+}
+
+@media screen and (max-width: 500px) {
+  header nav{
+    flex-direction: column;
+  }
+  header nav form{
+    width:80%;
+    margin-top: 10px;
+  }
+}
+
+
+
+/* Responsive adjustments */
+.photo {
+    margin-top: 20%;
+    justify-content: center;
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    height: 400px;
+    width: 400px;
+}
+
+.S {
+    font-size: 50px;
+    color: black;
+}
+
+.container {
+    font-size: large;
+    text-align: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 90%; /* Adjusted width for mobile */
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+
+.recipe {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    cursor: pointer;
+    max-width: 100%; /* Adjusted maximum width for mobile */
+}
+
+.recipe img {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Ensure aspect ratio is maintained */
+}
+
+.recipe h3 {
+    font-size: 24px;
+}
+
+.recipe p {
+    font-size: 20px;
+}
+
+.recipe button {
+    font-size: 20px;
+    font-weight: bold; /* Adjusted font weight */
+    padding: 10px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(181, 133, 133);
+    margin: 10px auto;
+}
+
+.recipe button:hover {
+    background-color: red;
+}
